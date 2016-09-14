@@ -58,6 +58,10 @@ header span {
         background-image: url("../img/kian-4.jpg");
         background-size: cover;
         background-position: center; }
+      .main .card div.fourth {
+        background-image: url("../img/kian-5.jpg");
+        background-size: cover;
+        background-position: center; }
 
 .pull-right {
   float: right !important; }
