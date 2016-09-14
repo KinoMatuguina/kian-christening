@@ -15,6 +15,7 @@ var scriptsDir = 'assets/js';
 gulp.task('serve', ['sass', 'js'], function () {
 	browserSync.init({
 		server: './',
+		port: 4000,
 		notify: false,
 		ui: false
 	});
