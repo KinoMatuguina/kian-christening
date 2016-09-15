@@ -96,7 +96,7 @@ header {
     }
 }
 
-.main {
+.intro {
 	width: 100%;
 	height: auto;
 	padding: 5px 0;
@@ -159,6 +159,39 @@ header {
 			    background-position: center;
     		}
 	    }
+	}
+}
+
+#about {
+	height: 300px;
+	position: relative;
+	div {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+		position: absolute;
+		background-size: cover;
+		background-position: center;
+		&.first {
+			background-image: url('../img/about-1.jpg');
+			top: 30px;
+			right: 30px;
+    		transform: rotate(15deg);
+		}
+		&.second {
+			background-image: url('../img/about-2.jpg');
+			top: 90px;
+    		right: 80px;
+    		transform: rotate(-16deg);
+		}
+		&.third {
+			background-image: url('../img/about-3.jpg');
+			top: 160px;
+    		right: 28px;
+    		transform: rotate(25deg);
+		}
+
+
 	}
 }
 
