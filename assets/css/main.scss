@@ -25,6 +25,7 @@ header {
 	background-color: #FFF;
 	position: fixed;
 	width: 100%;
+	z-index: 100;
 
 	#title {
 		font-family: Angelique;
@@ -35,6 +36,7 @@ header {
 	    padding-left: 10px;
 	    color: black;
 	    text-shadow: 2px 2px lightblue;
+	    display: inline-block;
 
 	    figure {
 
@@ -54,9 +56,43 @@ header {
 
 	}
 
+	.burger-navigation {
+		font-size: 1.7em;
+	    display: inline-block;
+	    margin: 6px;
+
+	}
+
 	span  {
 		vertical-align: middle;
 	}
+}
+
+.head-collapse {
+	position: fixed;
+    top: 46px;
+    background-color: #FFF;
+    z-index: 100;
+    width: 100%;
+    display: none;
+    ul {
+    	list-style: none;
+    	padding-left: 0;
+		margin: 0;
+		border-bottom: 1px solid lightblue;
+		li {
+			padding: 10px 20px;
+			border-top: 1px solid lightblue;
+
+			a{
+				font-family: Angelique;
+				text-shadow: 2px 2px lightblue;
+				font-size: 1.8em;
+				text-decoration: none;
+				color: #000;
+			}
+		}
+    }
 }
 
 .main {
@@ -64,7 +100,7 @@ header {
 	height: auto;
 	padding: 5px 0;
 	padding-top: 45px;
-	background-color: lavender;
+	background-color: aliceblue;
 	title {
 	    	display: block;
 	    	font-family: milton;
@@ -78,10 +114,12 @@ header {
 		width: 90%;
     	margin: 0 auto;
     	p {
-    		font-family: cursive;
+    		font-family: monospace;
     		font-size: .85em;
+    		line-height: 1.4em;
     		text-align: center;
-    	}
+    		font-weight: 100
+ ;   	}
 	}
 
 	.card {
@@ -139,6 +177,7 @@ header {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	vertical-align: middle;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

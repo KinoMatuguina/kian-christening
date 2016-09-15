@@ -14,7 +14,8 @@ header {
   border-bottom: 1px solid lightblue;
   background-color: #FFF;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
   header #title {
     font-family: Angelique;
     font-size: 1.5em;
@@ -23,7 +24,8 @@ header {
     padding-bottom: 10px;
     padding-left: 10px;
     color: black;
-    text-shadow: 2px 2px lightblue; }
+    text-shadow: 2px 2px lightblue;
+    display: inline-block; }
     header #title figure {
       background-image: url("../img/kian-header.jpg");
       width: 30px;
@@ -36,15 +38,41 @@ header {
       background-repeat: no-repeat;
       border-radius: 50%;
       margin-right: 5px; }
+  header .burger-navigation {
+    font-size: 1.7em;
+    display: inline-block;
+    margin: 6px; }
   header span {
     vertical-align: middle; }
+
+.head-collapse {
+  position: fixed;
+  top: 46px;
+  background-color: #FFF;
+  z-index: 100;
+  width: 100%;
+  display: none; }
+  .head-collapse ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border-bottom: 1px solid lightblue; }
+    .head-collapse ul li {
+      padding: 10px 20px;
+      border-top: 1px solid lightblue; }
+      .head-collapse ul li a {
+        font-family: Angelique;
+        text-shadow: 2px 2px lightblue;
+        font-size: 1.8em;
+        text-decoration: none;
+        color: #000; }
 
 .main {
   width: 100%;
   height: auto;
   padding: 5px 0;
   padding-top: 45px;
-  background-color: lavender; }
+  background-color: aliceblue; }
   .main title {
     display: block;
     font-family: milton;
@@ -57,9 +85,11 @@ header {
     width: 90%;
     margin: 0 auto; }
     .main .join-us p {
-      font-family: cursive;
+      font-family: monospace;
       font-size: .85em;
-      text-align: center; }
+      line-height: 1.4em;
+      text-align: center;
+      font-weight: 100; }
   .main .card {
     width: 90%;
     height: 250px;
@@ -102,5 +132,6 @@ header {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
