@@ -59,7 +59,7 @@ header {
 	.burger-navigation {
 		font-size: 1.7em;
 	    display: inline-block;
-	    margin: 6px;
+	    margin: 5px 6px 6px 6px;
 
 	}
 
@@ -89,6 +89,7 @@ header {
 				text-shadow: 2px 2px lightblue;
 				font-size: 1.8em;
 				text-decoration: none;
+				display: block;
 				color: #000;
 			}
 		}

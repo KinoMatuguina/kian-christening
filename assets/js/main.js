@@ -34,8 +34,10 @@
 	        		x.nav.on('click', function(){
 	        			x.nav.toggleClass('active');
 	        				if (x.nav.is('.active')) {
+	        					x.nav.attr('data-icon','M');
 	        					x.nav_collapse.slideDown('fast');
 	        				} else {
+	        					x.nav.attr('data-icon','a');
 	        					x.nav_collapse.slideUp('fast');
 	        				}
 	        		});
