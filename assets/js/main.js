@@ -41,6 +41,28 @@
 	        					x.nav_collapse.slideUp('fast');
 	        				}
 	        		});
+	        	},
+
+	        	fadeinSlideUp: function() {
+	        		var about = $('#about'),
+	        			offset = about.offset();
+
+	        			console.log(offset.top);
+	        		$(window).scroll(function(e){
+	        			var counter = 0;
+						var imagesCount = setInterval(function(){
+						  $('#about').children('div').eq(counter).addClass('fadeInUp');
+						  counter++;
+						  $('.fadeInUp').fadeIn();
+
+						  if (counter === 3) {
+						  	$('#about').children('div').removeClass('fadeInUp').addClass('stick');
+						    clearInterval(imagesCount);
+						
+						  }
+						}, 1000);
+	        		})
+					
 	        	}
 
         }
@@ -48,7 +70,7 @@
         
         	main.slick();
         	main.toggle();
-
+        	main.fadeinSlideUp();
     }
 
 }(jQuery));

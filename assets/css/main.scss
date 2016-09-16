@@ -19,6 +19,16 @@
     src: url('../fonts/Angelique-Rose-font-FFP.otf');
 }
 
+@font-face {
+	font-family : victorian;
+	src: url('../fonts/Victorian Parlor Vintage Alternate_free.ttf');
+}
+
+@font-face {
+	font-family : Springtime;
+	src: url('../fonts/MRF Springtime Blues Two.ttf');
+}
+
 header {
 
 	border-bottom: 1px solid lightblue;
@@ -115,12 +125,12 @@ header {
 		width: 90%;
     	margin: 0 auto;
     	p {
-    		font-family: monospace;
-    		font-size: .85em;
+    		font-family: Springtime;
+    		font-size: 1em;
     		line-height: 1.4em;
     		text-align: center;
-    		font-weight: 100
- ;   	}
+    		font-weight: 100;
+    	}
 	}
 
 	.card {
@@ -163,32 +173,53 @@ header {
 }
 
 #about {
-	height: 300px;
+	height: 350px;
 	position: relative;
+
+	h1 {
+		
+		font-family: milton;
+		font-weight: normal;
+	    text-align: center;
+	    font-size: 3.5em;
+	    margin: 10px 0 0 0;
+
+	}
+	p {
+		margin: 0 auto;
+		font-family: Springtime;
+		width: 80%;
+		font-size: 1.2em;
+		text-align: center;
+	}
 	div {
 		display: inline-block;
-		width: 80px;
-		height: 80px;
+		width: 100px;
+		height: 100px;
 		position: absolute;
 		background-size: cover;
 		background-position: center;
+		display: none;
+
 		&.first {
 			background-image: url('../img/about-1.jpg');
-			top: 30px;
-			right: 30px;
+		    top: 150px;
+		    right: 105px;
+		    z-index: 10;
     		transform: rotate(15deg);
 		}
 		&.second {
 			background-image: url('../img/about-2.jpg');
-			top: 90px;
-    		right: 80px;
+			top: 200px;
+		    right: 194px;
     		transform: rotate(-16deg);
 		}
 		&.third {
 			background-image: url('../img/about-3.jpg');
-			top: 160px;
-    		right: 28px;
-    		transform: rotate(25deg);
+		    top: 230px;
+		    right: 30px;
+    		transform: rotate(10deg);
+    		background-position: left;
 		}
 
 
