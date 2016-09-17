@@ -207,10 +207,24 @@ header {
     width: 90%;
     height: 200px;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     #church .map-church-wrapper #map-church {
+      z-index: 100;
       height: 100%;
       width: 100%; }
+    #church .map-church-wrapper .preloader {
+      z-index: 10;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      background-image: url("../img/Spin and pulsate.gif");
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
 
 .pull-right {
   float: right !important; }
