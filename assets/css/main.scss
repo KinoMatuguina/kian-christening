@@ -29,6 +29,8 @@
 	src: url('../fonts/MRF Springtime Blues Two.ttf');
 }
 
+// 320 wudth
+
 header {
 
 	border-bottom: 1px solid lightblue;
@@ -199,7 +201,7 @@ header {
 		position: absolute;
 		background-size: cover;
 		background-position: center;
-		display: none;
+		opacity: 0;
 
 		&.first {
 			background-image: url('../img/about-1.jpg');
@@ -221,8 +223,59 @@ header {
     		transform: rotate(10deg);
     		background-position: left;
 		}
+		&.fourth {
+			background-image: url('../img/about-4.jpg');
+		    top: 230px;
+		    right: 30px;
+    		transform: rotate(10deg);
+    		background-position: left;
+    		display: none;
+		}
 
 
+	}
+}
+
+
+#church {
+	width: 100%;
+	height: 300px;
+	background-color: #DAF2DA;
+	h1 {
+		
+		font-family: milton;
+		font-weight: normal;
+	    text-align: center;
+	    font-size: 3.5em;
+	    margin: 0;
+	    padding: 10px 0;
+
+	}
+
+	.address {
+		span {
+			font-size: 1.2em;
+			display: inline-block;
+		}
+		p {
+			font-size: .90em;
+			font-family: Springtime;
+			display: inline-block;
+    		margin: 0;
+		}
+		width: 87%;
+    	margin: 0 auto 20px auto;
+	}
+
+	.map-church-wrapper {
+		width: 90%;
+		height: 200px;
+		display: block;
+		margin: 0 auto;
+		#map-church {
+			height: 100%;
+			width: 100%;
+		}
 	}
 }
 

@@ -40,7 +40,7 @@ gulp.task('sass', function () {
 // process JS files and return the stream.
 gulp.task('js', function () {
 	return gulp.src([
-			scriptsDir + '/main.js'
+			scriptsDir + '/*.js'
 		])
 		.pipe(concat('main.min.js')) // concatenate to one JS
 		.pipe(uglify())

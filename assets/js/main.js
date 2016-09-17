@@ -47,13 +47,12 @@
 	        		var about = $('#about'),
 	        			offset = about.offset();
 
-	        			console.log(offset.top);
 	        		$(window).scroll(function(e){
 	        			var counter = 0;
 						var imagesCount = setInterval(function(){
 						  $('#about').children('div').eq(counter).addClass('fadeInUp');
 						  counter++;
-						  $('.fadeInUp').fadeIn();
+						  $('.fadeInUp').animate({opacity: "1"}, 1000);
 
 						  if (counter === 3) {
 						  	$('#about').children('div').removeClass('fadeInUp').addClass('stick');
@@ -71,6 +70,7 @@
         	main.slick();
         	main.toggle();
         	main.fadeinSlideUp();
+
     }
 
 }(jQuery));
