@@ -125,14 +125,18 @@ header {
         background-position: center; }
 
 #about {
-  height: 350px;
-  position: relative; }
+  height: 400px;
+  position: relative;
+  background-image: url("../img/about-background.png");
+  background-size: cover; }
   #about h1 {
     font-family: milton;
     font-weight: normal;
     text-align: center;
     font-size: 3.5em;
-    margin: 10px 0 0 0; }
+    text-shadow: 2px 2px lightblue;
+    margin: 0;
+    padding: 10px 0 0 0; }
   #about p {
     margin: 0 auto;
     font-family: Springtime;
@@ -149,22 +153,22 @@ header {
     opacity: 0; }
     #about div.first {
       background-image: url("../img/about-1.jpg");
-      top: 150px;
+      top: 190px;
       right: 105px;
       z-index: 10;
-      -webkit-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      transform: rotate(15deg); }
+      -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+      transform: rotate(-2deg); }
     #about div.second {
       background-image: url("../img/about-2.jpg");
-      top: 200px;
+      top: 260px;
       right: 194px;
       -webkit-transform: rotate(-16deg);
       -ms-transform: rotate(-16deg);
       transform: rotate(-16deg); }
     #about div.third {
       background-image: url("../img/about-3.jpg");
-      top: 230px;
+      top: 260px;
       right: 30px;
       -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
@@ -184,14 +188,20 @@ header {
   width: 100%;
   height: auto;
   padding-bottom: 20px;
-  background-color: #DAF2DA; }
+  background-color: aliceblue; }
   #church h1 {
     font-family: milton;
     font-weight: normal;
     text-align: center;
     font-size: 3.5em;
     margin: 0;
-    padding: 10px 0; }
+    padding: 10px 0;
+    text-shadow: 2px 2px lightblue; }
+  #church h2 {
+    font-family: Springtime;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 5px 0; }
   #church .address {
     width: 87%;
     margin: 0 auto 20px auto; }
@@ -212,7 +222,9 @@ header {
     #church .map-church-wrapper #map-church {
       z-index: 100;
       height: 100%;
-      width: 100%; }
+      width: 100%;
+      border-radius: 10%;
+      box-shadow: 0 0 30px lightblue; }
     #church .map-church-wrapper .preloader {
       z-index: 10;
       position: absolute;

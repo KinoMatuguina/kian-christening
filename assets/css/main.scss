@@ -30,7 +30,6 @@
 }
 
 // 320 wudth
-
 header {
 
 	border-bottom: 1px solid lightblue;
@@ -175,8 +174,10 @@ header {
 }
 
 #about {
-	height: 350px;
+	height: 400px;
 	position: relative;
+	background-image: url('../img/about-background.png');
+	background-size: cover;
 
 	h1 {
 		
@@ -184,7 +185,9 @@ header {
 		font-weight: normal;
 	    text-align: center;
 	    font-size: 3.5em;
-	    margin: 10px 0 0 0;
+	    text-shadow: 2px 2px lightblue;
+	    margin: 0;
+	    padding: 10px 0 0 0;
 
 	}
 	p {
@@ -205,20 +208,20 @@ header {
 
 		&.first {
 			background-image: url('../img/about-1.jpg');
-		    top: 150px;
+		    top: 190px;
 		    right: 105px;
 		    z-index: 10;
-    		transform: rotate(15deg);
+    		transform: rotate(-2deg);
 		}
 		&.second {
 			background-image: url('../img/about-2.jpg');
-			top: 200px;
+			top: 260px;
 		    right: 194px;
     		transform: rotate(-16deg);
 		}
 		&.third {
 			background-image: url('../img/about-3.jpg');
-		    top: 230px;
+		    top: 260px;
 		    right: 30px;
     		transform: rotate(10deg);
     		background-position: left;
@@ -241,7 +244,8 @@ header {
 	width: 100%;
 	height: auto;
 	padding-bottom: 20px;
-	background-color: #DAF2DA;
+	background-color: aliceblue;
+
 	h1 {
 		
 		font-family: milton;
@@ -250,7 +254,17 @@ header {
 	    font-size: 3.5em;
 	    margin: 0;
 	    padding: 10px 0;
+		text-shadow: 2px 2px lightblue;
 
+
+	}
+
+	h2 {
+
+		font-family: Springtime;
+	    font-weight: normal;
+	    text-align: center;
+	    margin: 0 0 5px 0;
 	}
 
 	.address {
@@ -274,10 +288,13 @@ header {
 		display: block;
 		margin: 0 auto;
 		position: relative;
+		
 		#map-church {
 			z-index: 100;
 			height: 100%;
 			width: 100%;
+			border-radius: 10%;
+    		box-shadow: 0 0 30px lightblue;
 		}
 		.preloader {
 			z-index: 10;
