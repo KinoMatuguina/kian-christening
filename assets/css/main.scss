@@ -176,8 +176,11 @@ header {
 #about {
 	height: 400px;
 	position: relative;
-	background-image: url('../img/about-background.png');
-	background-size: cover;
+	// background-image: url('../img/about-background.png');
+	// background-image: url('../img/about-background.jpg');
+	// background-position: center;
+	// background-size: cover;
+	background-color: aliceblue;
 
 	h1 {
 		
@@ -284,17 +287,116 @@ header {
 
 	.map-church-wrapper {
 		width: 90%;
-		height: 200px;
+		height: 400px;
 		display: block;
 		margin: 0 auto;
 		position: relative;
-		
+		z-index: 10;
+
 		#map-church {
 			z-index: 100;
-			height: 100%;
+			height: 50%;
 			width: 100%;
-			border-radius: 10%;
-    		box-shadow: 0 0 30px lightblue;
+			border-top-left-radius: 10%;
+    		border-top-right-radius: 10%;
+    		box-shadow: 0 -8px 46px -4px lightblue;
+		}
+		#pano {
+			z-index: 100;
+			height: 50%;
+			width: 100%;
+			border-bottom-left-radius: 10%;
+    		border-bottom-right-radius: 10%;
+    		box-shadow: 0 8px 46px -4px lightblue;
+
+		}
+		.preloader {
+			z-index: 10;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			background-size: cover;
+			background-image: url('../img/Spin and pulsate.gif');
+			top: 50%;
+		    left: 50%; 
+		   -webkit-transform: translate(-50%, -50%);
+		   -moz-transform: translate(-50%, -50%); 
+		   -ms-transform: translate(-50%, -50%); 
+		   -o-transform: translate(-50%, -50%); 
+		   transform: translate(-50%, -50%); 
+		}
+	}
+}
+
+
+#reception {
+
+	width: 100%;
+	height: auto;
+	padding-bottom: 20px;
+	background-color: aliceblue;
+
+	h1 {
+		
+		font-family: milton;
+		font-weight: normal;
+	    text-align: center;
+	    font-size: 3.5em;
+	    margin: 0;
+	    padding: 10px 0;
+		text-shadow: 2px 2px lightblue;
+
+
+	}
+
+	h2 {
+
+		font-family: Springtime;
+	    font-weight: normal;
+	    text-align: center;
+	    margin: 0 0 5px 0;
+	}
+
+	.address {
+		span {
+			font-size: 1.2em;
+			display: inline-block;
+		}
+		p {
+			font-size: .90em;
+			font-family: Springtime;
+			display: inline-block;
+    		margin: 0;
+		}
+		width: 87%;
+    	margin: 0 auto 20px auto;
+	}
+
+	.map-reception-wrapper {
+		width: 90%;
+		height: 400px;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		z-index: 10;
+
+		#map-reception {
+			z-index: 100;
+			height: 50%;
+			width: 100%;
+			border-top-left-radius: 10%;
+    		border-top-right-radius: 10%;
+    		box-shadow: 0 -8px 46px -4px lightblue;
+		}
+
+		#pano-2 {
+			z-index: 100;
+			height: 50%;
+			width: 100%;
+			border-bottom-left-radius: 10%;
+    		border-bottom-right-radius: 10%;
+    		box-shadow: 0 8px 46px -4px lightblue;
+
 		}
 		.preloader {
 			z-index: 10;

@@ -127,8 +127,7 @@ header {
 #about {
   height: 400px;
   position: relative;
-  background-image: url("../img/about-background.png");
-  background-size: cover; }
+  background-color: aliceblue; }
   #about h1 {
     font-family: milton;
     font-weight: normal;
@@ -215,17 +214,89 @@ header {
       margin: 0; }
   #church .map-church-wrapper {
     width: 90%;
-    height: 200px;
+    height: 400px;
     display: block;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    z-index: 10; }
     #church .map-church-wrapper #map-church {
       z-index: 100;
-      height: 100%;
+      height: 50%;
       width: 100%;
-      border-radius: 10%;
-      box-shadow: 0 0 30px lightblue; }
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      box-shadow: 0 -8px 46px -4px lightblue; }
+    #church .map-church-wrapper #pano {
+      z-index: 100;
+      height: 50%;
+      width: 100%;
+      border-bottom-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+      box-shadow: 0 8px 46px -4px lightblue; }
     #church .map-church-wrapper .preloader {
+      z-index: 10;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      background-image: url("../img/Spin and pulsate.gif");
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+#reception {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  background-color: aliceblue; }
+  #reception h1 {
+    font-family: milton;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 10px 0;
+    text-shadow: 2px 2px lightblue; }
+  #reception h2 {
+    font-family: Springtime;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 5px 0; }
+  #reception .address {
+    width: 87%;
+    margin: 0 auto 20px auto; }
+    #reception .address span {
+      font-size: 1.2em;
+      display: inline-block; }
+    #reception .address p {
+      font-size: .90em;
+      font-family: Springtime;
+      display: inline-block;
+      margin: 0; }
+  #reception .map-reception-wrapper {
+    width: 90%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10; }
+    #reception .map-reception-wrapper #map-reception {
+      z-index: 100;
+      height: 50%;
+      width: 100%;
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      box-shadow: 0 -8px 46px -4px lightblue; }
+    #reception .map-reception-wrapper #pano-2 {
+      z-index: 100;
+      height: 50%;
+      width: 100%;
+      border-bottom-left-radius: 10%;
+      border-bottom-right-radius: 10%;
+      box-shadow: 0 8px 46px -4px lightblue; }
+    #reception .map-reception-wrapper .preloader {
       z-index: 10;
       position: absolute;
       width: 30px;
