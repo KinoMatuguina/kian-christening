@@ -54,7 +54,7 @@
 						  counter++;
 						  $('.fadeInUp').animate({opacity: "1"}, 1000);
 
-						  if (counter === 3) {
+						  if (counter === 6) {
 						  	$('#about').children('div').removeClass('fadeInUp').addClass('stick');
 						    clearInterval(imagesCount);
 						
@@ -62,6 +62,22 @@
 						}, 1000);
 	        		})
 					
+	        	},
+
+	        	scrolled: function() {
+	        		$('.head-collapse ul li').each(function() {
+	        			console.log($(this));
+	        			var getClass = '';
+	        			$(this).on('click', function() {
+	        				getClass = $(this).children('a').attr('class');
+	        				console.log(getClass);
+	        				$('.head-collapse ul li').removeClass('active');
+	        				$(this).addClass('active');
+	        				$('html, body').animate({
+								    scrollTop: ($('#' + getClass).offset().top - 70)
+								},500);
+	        			});
+	        		});
 	        	}
 
         }
@@ -70,6 +86,7 @@
         	main.slick();
         	main.toggle();
         	main.fadeinSlideUp();
+        	main.scrolled();
 
     }
 

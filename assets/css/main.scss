@@ -29,7 +29,7 @@
 	src: url('../fonts/MRF Springtime Blues Two.ttf');
 }
 
-// 320 wudth
+// 320 width
 header {
 
 	border-bottom: 1px solid lightblue;
@@ -94,7 +94,9 @@ header {
 		li {
 			padding: 10px 20px;
 			border-top: 1px solid lightblue;
-
+			&.active {
+				border-bottom: 2px solid lightblue;
+			}
 			a{
 				font-family: Angelique;
 				text-shadow: 2px 2px lightblue;
@@ -215,12 +217,15 @@ header {
 		    right: 105px;
 		    z-index: 10;
     		transform: rotate(-2deg);
+    		
 		}
 		&.second {
 			background-image: url('../img/about-2.jpg');
 			top: 260px;
 		    right: 194px;
     		transform: rotate(-16deg);
+    		
+
 		}
 		&.third {
 			background-image: url('../img/about-3.jpg');
@@ -228,14 +233,32 @@ header {
 		    right: 30px;
     		transform: rotate(10deg);
     		background-position: left;
+    		
+
 		}
 		&.fourth {
 			background-image: url('../img/about-4.jpg');
 		    top: 230px;
-		    right: 30px;
+		    left: 30px;
     		transform: rotate(10deg);
     		background-position: left;
     		display: none;
+		}
+		&.fifth {
+			background-image: url('../img/about-4.jpg');
+		    top: 270px;
+		    left: 130px;
+    		transform: rotate(-3deg);
+    		background-position: left;
+    		display: none;
+		}
+		&.six {
+		    background-image: url(../img/about-4.jpg);
+		    top: 180px;
+		    left: 200px;
+		    transform: rotate(11deg);
+		    background-position: left;
+		    display: none;
 		}
 
 
@@ -297,16 +320,16 @@ header {
 			z-index: 100;
 			height: 50%;
 			width: 100%;
-			border-top-left-radius: 10%;
-    		border-top-right-radius: 10%;
+			border-top-left-radius: 20px;
+    		border-top-right-radius: 20px;
     		box-shadow: 0 -8px 46px -4px lightblue;
 		}
 		#pano {
 			z-index: 100;
 			height: 50%;
 			width: 100%;
-			border-bottom-left-radius: 10%;
-    		border-bottom-right-radius: 10%;
+			border-bottom-left-radius: 20px;
+    		border-bottom-right-radius: 20px;
     		box-shadow: 0 8px 46px -4px lightblue;
 
 		}
@@ -384,8 +407,8 @@ header {
 			z-index: 100;
 			height: 50%;
 			width: 100%;
-			border-top-left-radius: 10%;
-    		border-top-right-radius: 10%;
+			border-top-left-radius: 20px;
+    		border-top-right-radius: 20px;
     		box-shadow: 0 -8px 46px -4px lightblue;
 		}
 
@@ -393,8 +416,8 @@ header {
 			z-index: 100;
 			height: 50%;
 			width: 100%;
-			border-bottom-left-radius: 10%;
-    		border-bottom-right-radius: 10%;
+			border-bottom-left-radius: 20px;
+    		border-bottom-right-radius: 20px;
     		box-shadow: 0 8px 46px -4px lightblue;
 
 		}
@@ -412,6 +435,181 @@ header {
 		   -ms-transform: translate(-50%, -50%); 
 		   -o-transform: translate(-50%, -50%); 
 		   transform: translate(-50%, -50%); 
+		}
+	}
+}
+
+
+@media screen and (min-width: 400px) {
+	#about {
+		div {
+			&.fourth {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 568px) {
+	.intro {
+		.card {
+			height: 400px;
+		}
+		.join-us {
+			p {
+				font-size: 1.3em;
+				br {
+					display: none;
+				}
+			}
+		}
+	}
+	#about {
+		p {
+			font-size: 1.3em;
+		}
+		div {
+			&.fifth {
+				display: block;
+			}
+			&.six {
+				display: block;
+			}
+		}
+	}
+	#church {
+		h2 {
+			font-size: 2em;
+		}
+		.address {
+			p {
+				font-size: 1.3em;
+			}
+			span {
+				font-size: 1.6em;
+			}
+		}
+		.map-church-wrapper {
+			height: 550px;
+		}
+	}
+	#reception {
+		h2 {
+			font-size: 2em;
+		}
+		.address {
+			p {
+				font-size: 1.3em;
+			}
+			span {
+				font-size: 1.6em;
+			}
+		}
+		.map-reception-wrapper {
+			height: 550px;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: aliceblue;
+	}
+	.intro {
+		width: 70%;
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+	#about {
+		width: 70%;
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+
+	#church {
+		width: 70%;
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+
+	#reception {
+		width: 70%;
+		display: block;
+		margin: 0 auto 50px auto;
+	}
+	
+}
+
+@media screen and (min-width: 1024px) {
+	header {
+		.burger-navigation {
+			display: none;
+		}
+		#title {
+			padding-top: 15px;
+		}
+		.head-collapse {
+			display: inline-block !important;
+			float: right;
+			width: auto;
+			position: relative;
+			top: 0;
+			ul {
+				display: inline-block;
+				border: 0;
+				li {
+					display: inline-block;
+					border: 0;
+					&:hover {
+						border-bottom: 2px solid lightblue;
+					}
+				}
+			}
+		}
+	}
+	.intro {
+		padding-top: 70px;
+		title {
+			margin-bottom: 20px;
+		}
+
+	}
+
+	#about {
+		div {
+			width: 150px;
+			height: 150px;
+			&.first	{
+				right: 155px;
+			}
+			&.second {
+			    right: 284px;
+			}
+			&.third {
+			   right: 60px;
+			}
+			&.fourth {
+			    left: 100px;
+			    top: 150px;
+			}
+			&.fifth {
+			   left: 200px;
+			}
+			&.six {
+				left: 320px;
+			}
+		}
+	}
+
+	#church {
+		.address {
+			margin-bottom: 30px;
+		}
+	}
+
+	#reception {
+		.address {
+			margin-bottom: 30px;
 		}
 	}
 }

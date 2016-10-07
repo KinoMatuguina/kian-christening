@@ -21,8 +21,8 @@ gulp.task('serve', ['sass', 'js'], function () {
 	});
 
 	gulp.watch('*.html').on('change', browserSync.reload);
-	gulp.watch(stylesDir + '/**/*.scss', ['sass']).on('change', browserSync.reload);
-	gulp.watch(scriptsDir + '/**/*.js', ['js-watch']).on('change', browserSync.reload);
+	gulp.watch(stylesDir + '/**/*.scss', ['sass']);
+	gulp.watch(scriptsDir + '/**/*.js', ['js-watch']);
 });
 
 // Compile sass into CSS & auto-inject into browsers

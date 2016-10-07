@@ -1,10 +1,10 @@
 var church = {
-    lat: 14.5618882,
-    lng: 121.0031631
+    lat: 14.566069,
+    lng: 121.0313941
 };
 var reception = {
-    lat: 14.564079,
-    lng: 121.003200
+    lat: 14.549476,
+    lng: 121.025846
 };
 
 function initMap() {
@@ -47,8 +47,8 @@ function initMap() {
             document.getElementById('pano'), {
               position: church,
               pov: {
-                heading: 34,
-                pitch: 0
+                heading: 170,
+                pitch: 10
               },
               visible: true
 
@@ -90,7 +90,7 @@ function initMap() {
             document.getElementById('pano-2'), {
               position: reception,
               pov: {
-                heading: 34,
+                heading: 240,
                 pitch: 0
               },
               visible: true

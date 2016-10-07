@@ -66,6 +66,8 @@ header {
     .head-collapse ul li {
       padding: 10px 20px;
       border-top: 1px solid lightblue; }
+      .head-collapse ul li.active {
+        border-bottom: 2px solid lightblue; }
       .head-collapse ul li a {
         font-family: Angelique;
         text-shadow: 2px 2px lightblue;
@@ -155,31 +157,43 @@ header {
       top: 190px;
       right: 105px;
       z-index: 10;
-      -webkit-transform: rotate(-2deg);
       -ms-transform: rotate(-2deg);
       transform: rotate(-2deg); }
     #about div.second {
       background-image: url("../img/about-2.jpg");
       top: 260px;
       right: 194px;
-      -webkit-transform: rotate(-16deg);
       -ms-transform: rotate(-16deg);
       transform: rotate(-16deg); }
     #about div.third {
       background-image: url("../img/about-3.jpg");
       top: 260px;
       right: 30px;
-      -webkit-transform: rotate(10deg);
       -ms-transform: rotate(10deg);
       transform: rotate(10deg);
       background-position: left; }
     #about div.fourth {
       background-image: url("../img/about-4.jpg");
       top: 230px;
-      right: 30px;
-      -webkit-transform: rotate(10deg);
+      left: 30px;
       -ms-transform: rotate(10deg);
       transform: rotate(10deg);
+      background-position: left;
+      display: none; }
+    #about div.fifth {
+      background-image: url("../img/about-4.jpg");
+      top: 270px;
+      left: 130px;
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+      background-position: left;
+      display: none; }
+    #about div.six {
+      background-image: url(../img/about-4.jpg);
+      top: 180px;
+      left: 200px;
+      -ms-transform: rotate(11deg);
+      transform: rotate(11deg);
       background-position: left;
       display: none; }
 
@@ -223,15 +237,15 @@ header {
       z-index: 100;
       height: 50%;
       width: 100%;
-      border-top-left-radius: 10%;
-      border-top-right-radius: 10%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
       box-shadow: 0 -8px 46px -4px lightblue; }
     #church .map-church-wrapper #pano {
       z-index: 100;
       height: 50%;
       width: 100%;
-      border-bottom-left-radius: 10%;
-      border-bottom-right-radius: 10%;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       box-shadow: 0 8px 46px -4px lightblue; }
     #church .map-church-wrapper .preloader {
       z-index: 10;
@@ -242,7 +256,6 @@ header {
       background-image: url("../img/Spin and pulsate.gif");
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
 
@@ -286,15 +299,15 @@ header {
       z-index: 100;
       height: 50%;
       width: 100%;
-      border-top-left-radius: 10%;
-      border-top-right-radius: 10%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
       box-shadow: 0 -8px 46px -4px lightblue; }
     #reception .map-reception-wrapper #pano-2 {
       z-index: 100;
       height: 50%;
       width: 100%;
-      border-bottom-left-radius: 10%;
-      border-bottom-right-radius: 10%;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
       box-shadow: 0 8px 46px -4px lightblue; }
     #reception .map-reception-wrapper .preloader {
       z-index: 10;
@@ -305,10 +318,114 @@ header {
       background-image: url("../img/Spin and pulsate.gif");
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
 
+@media screen and (min-width: 400px) {
+  #about div.fourth {
+    display: block; } }
+@media screen and (min-width: 568px) {
+  .intro .card {
+    height: 400px; }
+  .intro .join-us p {
+    font-size: 1.3em; }
+    .intro .join-us p br {
+      display: none; }
+
+  #about p {
+    font-size: 1.3em; }
+  #about div.fifth {
+    display: block; }
+  #about div.six {
+    display: block; }
+
+  #church h2 {
+    font-size: 2em; }
+  #church .address p {
+    font-size: 1.3em; }
+  #church .address span {
+    font-size: 1.6em; }
+  #church .map-church-wrapper {
+    height: 550px; }
+
+  #reception h2 {
+    font-size: 2em; }
+  #reception .address p {
+    font-size: 1.3em; }
+  #reception .address span {
+    font-size: 1.6em; }
+  #reception .map-reception-wrapper {
+    height: 550px; } }
+@media screen and (min-width: 768px) {
+  body {
+    background-color: aliceblue; }
+
+  .intro {
+    width: 70%;
+    display: block;
+    margin: 0 auto 50px auto; }
+
+  #about {
+    width: 70%;
+    display: block;
+    margin: 0 auto 50px auto; }
+
+  #church {
+    width: 70%;
+    display: block;
+    margin: 0 auto 50px auto; }
+
+  #reception {
+    width: 70%;
+    display: block;
+    margin: 0 auto 50px auto; } }
+@media screen and (min-width: 1024px) {
+  header .burger-navigation {
+    display: none; }
+  header #title {
+    padding-top: 15px; }
+  header .head-collapse {
+    display: inline-block !important;
+    float: right;
+    width: auto;
+    position: relative;
+    top: 0; }
+    header .head-collapse ul {
+      display: inline-block;
+      border: 0; }
+      header .head-collapse ul li {
+        display: inline-block;
+        border: 0; }
+        header .head-collapse ul li:hover {
+          border-bottom: 2px solid lightblue; }
+
+  .intro {
+    padding-top: 70px; }
+    .intro title {
+      margin-bottom: 20px; }
+
+  #about div {
+    width: 150px;
+    height: 150px; }
+    #about div.first {
+      right: 155px; }
+    #about div.second {
+      right: 284px; }
+    #about div.third {
+      right: 60px; }
+    #about div.fourth {
+      left: 100px;
+      top: 150px; }
+    #about div.fifth {
+      left: 200px; }
+    #about div.six {
+      left: 320px; }
+
+  #church .address {
+    margin-bottom: 30px; }
+
+  #reception .address {
+    margin-bottom: 30px; } }
 .pull-right {
   float: right !important; }
 
