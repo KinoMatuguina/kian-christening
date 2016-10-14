@@ -20,9 +20,24 @@
 	        		$('.single-item').slick({
 						  slide: 'div',
 						  dots: false,
+						   speed: 1000,
+						  fade: true,
+						  cssEase: 'linear',
 						  infinite: true,
 						  autoplay: true,
 						  slidesToShow: 1,
+						  prevArrow: false,
+						  nextArrow: false
+					});
+
+					$('#about').slick({
+						  slide: 'div',
+						  dots: false,
+						  infinite: true,
+						  autoplay: true,
+						  // centerMode: true,
+  						  // centerPadding: '',
+						  slidesToShow: 3,
 						  prevArrow: false,
 						  nextArrow: false
 					});
@@ -42,35 +57,24 @@
 	        				}
 	        		});
 	        	},
-
-	        	fadeinSlideUp: function() {
-	        		var about = $('#about'),
-	        			offset = about.offset();
-
-	        		$(window).scroll(function(e){
-	        			var counter = 0;
-						var imagesCount = setInterval(function(){
-						  $('#about').children('div').eq(counter).addClass('fadeInUp');
-						  counter++;
-						  $('.fadeInUp').animate({opacity: "1"}, 1000);
-
-						  if (counter === 6) {
-						  	$('#about').children('div').removeClass('fadeInUp').addClass('stick');
-						    clearInterval(imagesCount);
-						
-						  }
-						}, 1000);
-	        		})
-					
+	        	backToTop:function() {
+	        		$('header #title').on('click', function() {
+								$('html, body').animate({
+								    scrollTop: ($('.intro').offset().top)
+								},500);
+	        		});
 	        	},
 
 	        	scrolled: function() {
 	        		$('.head-collapse ul li').each(function() {
-	        			console.log($(this));
+	        			// console.log($(this));
 	        			var getClass = '';
 	        			$(this).on('click', function() {
+	        				$('.head-collapse').hide();
+	        				$('.burger-navigation').removeClass('active');
+	        				x.nav.attr('data-icon','a');
 	        				getClass = $(this).children('a').attr('class');
-	        				console.log(getClass);
+	        				// console.log(getClass);
 	        				$('.head-collapse ul li').removeClass('active');
 	        				$(this).addClass('active');
 	        				$('html, body').animate({
@@ -85,7 +89,7 @@
         
         	main.slick();
         	main.toggle();
-        	main.fadeinSlideUp();
+        	main.backToTop();
         	main.scrolled();
 
     }

@@ -48,7 +48,8 @@ header {
 	    color: black;
 	    text-shadow: 2px 2px lightblue;
 	    display: inline-block;
-
+		cursor: pointer;
+		
 	    figure {
 
 	    	background-image: url('../img/kian-header.jpg');
@@ -171,12 +172,22 @@ header {
 			    background-size: cover;
 			    background-position: center;
     		}
+    		&.fifth {
+			    background-image: url('../img/kian-6.jpg');
+			    background-size: cover;
+			    background-position: center;
+    		}
+    		&.six {
+			    background-image: url('../img/kian-7.jpg');
+			    background-size: cover;
+			    background-position: center;
+    		}
 	    }
 	}
 }
 
 #about {
-	height: 400px;
+	height: 450px;
 	position: relative;
 	// background-image: url('../img/about-background.png');
 	// background-image: url('../img/about-background.jpg');
@@ -201,64 +212,41 @@ header {
 		width: 80%;
 		font-size: 1.2em;
 		text-align: center;
+		line-height: 1.5;
 	}
-	div {
-		display: inline-block;
-		width: 100px;
-		height: 100px;
-		position: absolute;
-		background-size: cover;
-		background-position: center;
-		opacity: 0;
 
+	div {
+	    display: block;
+	    width: 90%;
+	    height: 220px;
+	    margin: 10px auto 0 auto;
+	    background-size: cover;
+	    background-position: center;
+		
 		&.first {
 			background-image: url('../img/about-1.jpg');
-		    top: 190px;
-		    right: 105px;
-		    z-index: 10;
-    		transform: rotate(-2deg);
-    		
+    		margin: 0 5px;
 		}
 		&.second {
 			background-image: url('../img/about-2.jpg');
-			top: 260px;
-		    right: 194px;
-    		transform: rotate(-16deg);
-    		
-
+			margin: 0 5px;
 		}
 		&.third {
 			background-image: url('../img/about-3.jpg');
-		    top: 260px;
-		    right: 30px;
-    		transform: rotate(10deg);
-    		background-position: left;
-    		
+			margin: 0 5px;
 
 		}
 		&.fourth {
 			background-image: url('../img/about-4.jpg');
-		    top: 230px;
-		    left: 30px;
-    		transform: rotate(10deg);
-    		background-position: left;
-    		display: none;
+			margin: 0 5px;
 		}
 		&.fifth {
-			background-image: url('../img/about-4.jpg');
-		    top: 270px;
-		    left: 130px;
-    		transform: rotate(-3deg);
-    		background-position: left;
-    		display: none;
+			background-image: url('../img/about-5.jpg');
+			margin: 0 5px;
 		}
 		&.six {
-		    background-image: url(../img/about-4.jpg);
-		    top: 180px;
-		    left: 200px;
-		    transform: rotate(11deg);
-		    background-position: left;
-		    display: none;
+		    background-image: url('../img/about-6.jpg');
+		    margin: 0 5px;
 		}
 
 
@@ -294,6 +282,7 @@ header {
 	}
 
 	.address {
+		text-align: center;
 		span {
 			font-size: 1.2em;
 			display: inline-block;
@@ -381,6 +370,7 @@ header {
 	}
 
 	.address {
+		text-align: center;
 		span {
 			font-size: 1.2em;
 			display: inline-block;
@@ -439,12 +429,50 @@ header {
 	}
 }
 
+#contact-us {
+	background-color: aliceblue;
+	width: 100%;
+	h1 {
+		margin: 0;
+		font-family: milton;
+		font-weight: normal;
+	    text-align: center;
+	    font-size: 3.5em;
+	    text-shadow: 2px 2px lightblue;
+	    padding: 10px 0 0 0;
+	}
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+	span {
+		font-family: Springtime;
+	    font-weight: normal;
+	    text-align: center;
+	    // margin: 0 0 5px 0;
+	    margin-right: 10px;
+	    font-size: 1.5em;
+	    // margin: 20px 20px 20px 0;
+	}
+	.wrapper {
+		// width: 60%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		text-align: center;
+
+		div {
+			padding: 10px 0;
+		}
+	}
+}
+
 
 @media screen and (min-width: 400px) {
 	#about {
 		div {
 			&.fourth {
-				display: block;
+				// display: block;
 			}
 		}
 	}
@@ -469,12 +497,7 @@ header {
 			font-size: 1.3em;
 		}
 		div {
-			&.fifth {
-				display: block;
-			}
-			&.six {
-				display: block;
-			}
+
 		}
 	}
 	#church {
@@ -518,9 +541,13 @@ header {
 	.intro {
 		width: 70%;
 		display: block;
-		margin: 0 auto 50px auto;
+		margin: 0 auto 20px auto;
+		.card {
+			margin-top: 10px;
+		}
 	}
 	#about {
+		height: 400px;
 		width: 70%;
 		display: block;
 		margin: 0 auto 50px auto;
@@ -576,28 +603,11 @@ header {
 	}
 
 	#about {
+		height: 400px;
 		div {
-			width: 150px;
-			height: 150px;
-			&.first	{
-				right: 155px;
-			}
-			&.second {
-			    right: 284px;
-			}
-			&.third {
-			   right: 60px;
-			}
-			&.fourth {
-			    left: 100px;
-			    top: 150px;
-			}
-			&.fifth {
-			   left: 200px;
-			}
-			&.six {
-				left: 320px;
-			}
+			margin-top: 10px;
+			width: 80%;
+			height: 250px;
 		}
 	}
 

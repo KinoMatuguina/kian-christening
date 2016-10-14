@@ -31,7 +31,8 @@ header {
     padding-left: 10px;
     color: black;
     text-shadow: 2px 2px lightblue;
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
     header #title figure {
       background-image: url("../img/kian-header.jpg");
       width: 30px;
@@ -125,9 +126,17 @@ header {
         background-image: url("../img/kian-5.jpg");
         background-size: cover;
         background-position: center; }
+      .intro .card div.fifth {
+        background-image: url("../img/kian-6.jpg");
+        background-size: cover;
+        background-position: center; }
+      .intro .card div.six {
+        background-image: url("../img/kian-7.jpg");
+        background-size: cover;
+        background-position: center; }
 
 #about {
-  height: 400px;
+  height: 450px;
   position: relative;
   background-color: aliceblue; }
   #about h1 {
@@ -143,59 +152,33 @@ header {
     font-family: Springtime;
     width: 80%;
     font-size: 1.2em;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.5; }
   #about div {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    position: absolute;
+    display: block;
+    width: 90%;
+    height: 220px;
+    margin: 10px auto 0 auto;
     background-size: cover;
-    background-position: center;
-    opacity: 0; }
+    background-position: center; }
     #about div.first {
       background-image: url("../img/about-1.jpg");
-      top: 190px;
-      right: 105px;
-      z-index: 10;
-      -ms-transform: rotate(-2deg);
-      transform: rotate(-2deg); }
+      margin: 0 5px; }
     #about div.second {
       background-image: url("../img/about-2.jpg");
-      top: 260px;
-      right: 194px;
-      -ms-transform: rotate(-16deg);
-      transform: rotate(-16deg); }
+      margin: 0 5px; }
     #about div.third {
       background-image: url("../img/about-3.jpg");
-      top: 260px;
-      right: 30px;
-      -ms-transform: rotate(10deg);
-      transform: rotate(10deg);
-      background-position: left; }
+      margin: 0 5px; }
     #about div.fourth {
       background-image: url("../img/about-4.jpg");
-      top: 230px;
-      left: 30px;
-      -ms-transform: rotate(10deg);
-      transform: rotate(10deg);
-      background-position: left;
-      display: none; }
+      margin: 0 5px; }
     #about div.fifth {
-      background-image: url("../img/about-4.jpg");
-      top: 270px;
-      left: 130px;
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-      background-position: left;
-      display: none; }
+      background-image: url("../img/about-5.jpg");
+      margin: 0 5px; }
     #about div.six {
-      background-image: url(../img/about-4.jpg);
-      top: 180px;
-      left: 200px;
-      -ms-transform: rotate(11deg);
-      transform: rotate(11deg);
-      background-position: left;
-      display: none; }
+      background-image: url("../img/about-6.jpg");
+      margin: 0 5px; }
 
 #church {
   width: 100%;
@@ -216,6 +199,7 @@ header {
     text-align: center;
     margin: 0 0 5px 0; }
   #church .address {
+    text-align: center;
     width: 87%;
     margin: 0 auto 20px auto; }
     #church .address span {
@@ -278,6 +262,7 @@ header {
     text-align: center;
     margin: 0 0 5px 0; }
   #reception .address {
+    text-align: center;
     width: 87%;
     margin: 0 auto 20px auto; }
     #reception .address span {
@@ -321,9 +306,34 @@ header {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
 
-@media screen and (min-width: 400px) {
-  #about div.fourth {
-    display: block; } }
+#contact-us {
+  background-color: aliceblue;
+  width: 100%; }
+  #contact-us h1 {
+    margin: 0;
+    font-family: milton;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 2px 2px lightblue;
+    padding: 10px 0 0 0; }
+  #contact-us a {
+    color: #000;
+    text-decoration: none; }
+  #contact-us span {
+    font-family: Springtime;
+    font-weight: normal;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 1.5em; }
+  #contact-us .wrapper {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-align: center; }
+    #contact-us .wrapper div {
+      padding: 10px 0; }
+
 @media screen and (min-width: 568px) {
   .intro .card {
     height: 400px; }
@@ -334,10 +344,6 @@ header {
 
   #about p {
     font-size: 1.3em; }
-  #about div.fifth {
-    display: block; }
-  #about div.six {
-    display: block; }
 
   #church h2 {
     font-size: 2em; }
@@ -363,9 +369,12 @@ header {
   .intro {
     width: 70%;
     display: block;
-    margin: 0 auto 50px auto; }
+    margin: 0 auto 20px auto; }
+    .intro .card {
+      margin-top: 10px; }
 
   #about {
+    height: 400px;
     width: 70%;
     display: block;
     margin: 0 auto 50px auto; }
@@ -404,22 +413,12 @@ header {
     .intro title {
       margin-bottom: 20px; }
 
-  #about div {
-    width: 150px;
-    height: 150px; }
-    #about div.first {
-      right: 155px; }
-    #about div.second {
-      right: 284px; }
-    #about div.third {
-      right: 60px; }
-    #about div.fourth {
-      left: 100px;
-      top: 150px; }
-    #about div.fifth {
-      left: 200px; }
-    #about div.six {
-      left: 320px; }
+  #about {
+    height: 400px; }
+    #about div {
+      margin-top: 10px;
+      width: 80%;
+      height: 250px; }
 
   #church .address {
     margin-bottom: 30px; }
