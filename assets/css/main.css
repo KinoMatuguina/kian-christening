@@ -162,23 +162,17 @@ header {
     background-size: cover;
     background-position: center; }
     #about div.first {
-      background-image: url("../img/about-1.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-1.jpg"); }
     #about div.second {
-      background-image: url("../img/about-2.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-2.jpg"); }
     #about div.third {
-      background-image: url("../img/about-3.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-3.jpg"); }
     #about div.fourth {
-      background-image: url("../img/about-4.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-4.jpg"); }
     #about div.fifth {
-      background-image: url("../img/about-5.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-5.jpg"); }
     #about div.six {
-      background-image: url("../img/about-6.jpg");
-      margin: 0 5px; }
+      background-image: url("../img/about-6.jpg"); }
 
 #church {
   width: 100%;
@@ -419,6 +413,18 @@ header {
       margin-top: 10px;
       width: 80%;
       height: 250px; }
+      #about div.first {
+        margin: 0 5px; }
+      #about div.second {
+        margin: 0 5px; }
+      #about div.third {
+        margin: 0 5px; }
+      #about div.fourth {
+        margin: 0 5px; }
+      #about div.fifth {
+        margin: 0 5px; }
+      #about div.six {
+        margin: 0 5px; }
 
   #church .address {
     margin-bottom: 30px; }

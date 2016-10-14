@@ -225,28 +225,28 @@ header {
 		
 		&.first {
 			background-image: url('../img/about-1.jpg');
-    		margin: 0 5px;
+    		
 		}
 		&.second {
 			background-image: url('../img/about-2.jpg');
-			margin: 0 5px;
+			
 		}
 		&.third {
 			background-image: url('../img/about-3.jpg');
-			margin: 0 5px;
+			
 
 		}
 		&.fourth {
 			background-image: url('../img/about-4.jpg');
-			margin: 0 5px;
+			
 		}
 		&.fifth {
 			background-image: url('../img/about-5.jpg');
-			margin: 0 5px;
+			
 		}
 		&.six {
 		    background-image: url('../img/about-6.jpg');
-		    margin: 0 5px;
+		    
 		}
 
 
@@ -605,10 +605,38 @@ header {
 	#about {
 		height: 400px;
 		div {
-			margin-top: 10px;
-			width: 80%;
-			height: 250px;
+	    margin-top: 10px;
+		width: 80%;
+		height: 250px;
+		
+		&.first {
+			
+    		margin: 0 5px;
 		}
+		&.second {
+			
+			margin: 0 5px;
+		}
+		&.third {
+			
+			margin: 0 5px;
+
+		}
+		&.fourth {
+			
+			margin: 0 5px;
+		}
+		&.fifth {
+			
+			margin: 0 5px;
+		}
+		&.six {
+		   
+		    margin: 0 5px;
+		}
+
+
+	}
 	}
 
 	#church {
